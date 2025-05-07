@@ -36,7 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault(); // ← Evita que el formulario se envíe
 
       if(validarSesion()){
-            cargarHTML('home.html');
+            // cargarHTML('home.html');
+            window.location.href = "home.html";
         };
 
     })

@@ -1,16 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="css/home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body class="grid-body">
     <header class="encabezado">
-        <img src="img/Logo sin fondo.png" alt="logo">
+        <img src="img/Logo sin fondo.png" alt="logo" class="logo">
         <div class="info-encabezado">
-            <h3 class="info-encabezado__titulo"></h3>
-            <p class="info-encabezado__subtitulo"></p>
+            <h3 class="info-encabezado__titulo">Lady Mantilla</h3>
+            <p class="info-encabezado__subtitulo">Administrador</p>
         </div>
     </header>
+    <nav class="navigation-bar">
+        <h3 class="navigation-bar__titulo">Opciones</h3>
+        <ul class="navigation-bar__list">
+            <li class="navigation-bar__item">
+                <a href="#" class="navigation-bar__link">Clientes</a>
+            </li>
+
+            <li class="navigation-bar__item">
+                <a href="#" class="navigation-bar__link">Mascotas</a>
+            </li>
+
+            <li class="navigation-bar__item">
+                <a href="#" class="navigation-bar__link">Historiales Clinicos</a>
+            </li>
+
+            <li class="navigation-bar__item">
+                <a href="#" class="navigation-bar__link">Programados</a>
+            </li>
+
+            <li class="navigation-bar__item">
+                <a href="#" class="navigation-bar__link">Ventas</a>
+            </li>
+
+            <li class="navigation-bar__item">
+                <a href="#" class="navigation-bar__link">Inventario</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <!-- <p class="main__message">¡Selecciona una opcion para empezar!</p> -->
+         <div class="header">
+            <h3 class="header__title">Listado de clientes</h3>
+            <div class="header__container-rigth">
+                <button>Registrar cliente</button>
+                <i class='bx bx-search header__search-logo'></i>
+            </div>
+         </div>
+         <section class="table-container">
+            <table class="table">
+                <thead class="table__header">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="table__body"></tbody>
+            </table>
+         </section>
+    </main>
 </body>
 </html>
