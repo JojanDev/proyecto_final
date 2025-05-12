@@ -1,0 +1,120 @@
+
+.header__search-logo{
+    font-size: 30px;
+}
+
+.main .header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .header__container-rigth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 100%;
+}
+
+.main .header__title{
+    font-size: 36px;
+}
+
+.main .header__btn{
+    height: 45px;
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;  
+    background-color: #1595F1;
+    border: none;
+    border-radius: 12px;
+}
+
+.main .header__search-logo{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+}
+
+.main .header__search-logo:hover{
+    background-color: #0161B5;
+    color: #fff;
+}
+
+.main .table{
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .table__header,
+.main .table__body{
+    display: flex;
+    width: 100%;
+}
+
+.main .table__row{
+    display: flex;
+    /* width: 1131px; */
+    width: 100%;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.main .table__row-header{
+    font-size: 20px;
+    height: 35px;
+}
+
+.main .table__row-body{
+    height: 30px;
+}
+
+.main .table__cell{
+    text-align: center;
+}
+
+.main .table__cell:nth-child(1){
+    width: 30px;
+    margin-left: 20px;
+}
+
+.main .table__cell{
+    width: calc((100% - 50px) / 4);
+}
+
+.main .table__header{
+    border-radius: 19px 19px 0 0;
+    background-color: #FFF1D5;
+}
+
+.main .table__body{
+    font-size: 16px;
+    background-color: #BDDDE4;
+    height: 100%;
+    border-radius: 0 0 19px 19px;
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.main .table__row-body:hover{
+    cursor: pointer;
+    background-color: #8eb0b8;
+}
+
+#clientes{
+    background-color: #004A8F;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+}

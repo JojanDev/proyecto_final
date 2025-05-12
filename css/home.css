@@ -83,6 +83,8 @@
 
 .navigation-bar__item:hover{
     background-color: #004A8F;
+    font-weight: bold;
+    letter-spacing: 0.8px;
 }
 
 .navigation-bar__link{
@@ -97,16 +99,12 @@
 /* Contenido principal */
 .main{
     grid-area: main;
-    margin: 20px;
+    margin: 10px 20px 20px 20px;
     background-color: #9bc3ee;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    padding: 10px;
-}
-
-.header__search-logo{
-    font-size: 30px;
+    flex-direction: column;
+    padding: 20px 20px 15px 20px;
 }

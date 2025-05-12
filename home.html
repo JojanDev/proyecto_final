@@ -6,6 +6,7 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="css/home.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="registro_cliente.css">
 </head>
 <body class="grid-body">
     <header class="encabezado">
@@ -19,7 +20,7 @@
         <h3 class="navigation-bar__titulo">Opciones</h3>
         <ul class="navigation-bar__list">
             <li class="navigation-bar__item">
-                <a href="#" class="navigation-bar__link">Clientes</a>
+                <a href="#" class="navigation-bar__link" id="clientes">Clientes</a>
             </li>
 
             <li class="navigation-bar__item">
@@ -45,29 +46,86 @@
     </nav>
 
     <main class="main">
-        <!-- <p class="main__message">¡Selecciona una opcion para empezar!</p> -->
-         <div class="header">
-            <h3 class="header__title">Listado de clientes</h3>
+        <p class="main__message">¡Selecciona una opcion para empezar!</p>
+        <!-- <div class="header">
+            <h3 class="header__title">Lista de Clientes</h3>
             <div class="header__container-rigth">
-                <button>Registrar cliente</button>
+                <button class="header__btn">Registrar cliente</button>
                 <i class='bx bx-search header__search-logo'></i>
             </div>
-         </div>
-         <section class="table-container">
-            <table class="table">
-                <thead class="table__header">
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody class="table__body"></tbody>
-            </table>
-         </section>
+        </div>
+         
+        <table class="table">
+            <thead class="table__header">
+                <tr class="table__row-header table__row">
+                    <th class="table__cell-header table__cell">ID</th>
+                    <th class="table__cell-header table__cell">Cliente</th>
+                    <th class="table__cell-header table__cell">Mascotas</th>
+                    <th class="table__cell-header table__cell">Telefono</th>
+                    <th class="table__cell-header table__cell">Email</th>
+                </tr>
+            </thead>
+            <tbody class="table__body">
+                <tr class="table__row-body table__row">
+                    <td class="table__cell-body table__cell">1</td>
+                    <td class="table__cell-body table__cell">Juan Perez</td>
+                    <td class="table__cell-body table__cell">Perro</td>
+                    <td class="table__cell-body table__cell">123456789</td>
+                    <td class="table__cell-body table__cell">juanperez@gmail.com</td>
+                </tr>
+
+                <tr class="table__row-body table__row">
+                    <td class="table__cell-body table__cell">2</td>
+                    <td class="table__cell-body table__cell">Juan Perez</td>
+                    <td class="table__cell-body table__cell">Perro</td>
+                    <td class="table__cell-body table__cell">123456789</td>
+                    <td class="table__cell-body table__cell">juanperez@gmail.com</td>
+                </tr>
+                
+            </tbody>
+        </table> -->
     </main>
+    <div class="fondo-borroso">
+        <div class="container-form">
+            <div class="container-form__header">
+                <i class='bx bx-left-arrow-alt icon'></i>
+                <h3 class="form__title">REGISTRO CLIENTE</h3>
+            </div>
+            <form action="" class="form">
+                <div class="form__container-field">
+                    <label for="" class="form__label">Nombre completo:</label>
+                    <input type="text" class="form__input">
+                </div>
+                <div class="form_container-fields">
+                    <div class="form__container-field">
+                        <label for="" class="form__label">Tipo de documento:</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__container-field">
+                        <label for="" class="form__label">Numero:</label>
+                        <input type="text" class="form__input">
+                    </div>
+                </div>
+                <div class="form__container-field">
+                    <label for="" class="form__label">Telefono</label>
+                    <input type="text" class="form__input">
+                </div>
+                <div class="form__container-field">
+                    <label for="" class="form__label">Correo electronico:</label>
+                    <input type="text" class="form__input">
+                </div>
+                <div class="form__container-field">
+                    <label for="" class="form__label">Direccion:</label>
+                    <input type="text" class="form__input">
+                </div>
+                <div class="form__container-btns">
+                    <button class="form__btn btn-register">Registrar</button>
+                    <button class="form__btn btn-cancel">Cancelar</button>
+                    <i class='bx  bx-search-big'></i> 
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="home.js"></script>
 </body>
 </html>
