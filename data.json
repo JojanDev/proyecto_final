@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "tipoDocumento": 1,
+        "documento": "123456789",
+        "nombreCompleto": "Juan Pérez",
+        "telefono": "+57 3123456789",
+        "email": "juan.perez@example.com",
+        "direccionResidencial": "Calle 123, Bogotá",
+        "numeroMascotas": 2
+    },
+    {
+        "id": 2,
+        "tipoDocumento": 2,
+        "documento": "987654321",
+        "nombreCompleto": "María Gómez",
+        "telefono": "+57 3209876543",
+        "email": "maria.gomez@example.com",
+        "direccionResidencial": "Carrera 45, Medellín",
+        "numeroMascotas": 1
+    },
+    {
+        "id": 3,
+        "tipoDocumento": 1,
+        "documento": "456789123",
+        "nombreCompleto": "Carlos Rodríguez",
+        "telefono": "+57 3104567891",
+        "email": "carlos.rodriguez@example.com",
+        "direccionResidencial": "Av. Siempre Viva 456, Cali",
+        "numeroMascotas": 3
+    },
+    {
+        "id": 4,
+        "tipoDocumento": 3,
+        "documento": "159753468",
+        "nombreCompleto": "Ana Martínez",
+        "telefono": "+57 3151597534",
+        "email": "ana.martinez@example.com",
+        "direccionResidencial": "Diagonal 89, Bucaramanga",
+        "numeroMascotas": 0
+    },
+    {
+        "id": 5,
+        "tipoDocumento": 2,
+        "documento": "753951258",
+        "nombreCompleto": "Luis Fernández",
+        "telefono": "+57 3007539512",
+        "email": "luis.fernandez@example.com",
+        "direccionResidencial": "Calle 88, Barranquilla",
+        "numeroMascotas": 2
+    },
+    {
+        "id": 6,
+        "tipoDocumento": 1,
+        "documento": "258369147",
+        "nombreCompleto": "Sofía Ramírez",
+        "telefono": "+57 3022583691",
+        "email": "sofia.ramirez@example.com",
+        "direccionResidencial": "Carrera 12, Cartagena",
+        "numeroMascotas": 1
+    },
+    {
+        "id": 7,
+        "tipoDocumento": 3,
+        "documento": "369258147",
+        "nombreCompleto": "Alejandro Torres",
+        "telefono": "+57 3163692581",
+        "email": "alejandro.torres@example.com",
+        "direccionResidencial": "Av. Central, Manizales",
+        "numeroMascotas": 4
+    },
+    {
+        "id": 8,
+        "tipoDocumento": 2,
+        "documento": "147258369",
+        "nombreCompleto": "Gabriela López",
+        "telefono": "+57 3111472583",
+        "email": "gabriela.lopez@example.com",
+        "direccionResidencial": "Calle 56, Pereira",
+        "numeroMascotas": 0
+    },
+    {
+        "id": 9,
+        "tipoDocumento": 1,
+        "documento": "789456123",
+        "nombreCompleto": "Fernando Castro",
+        "telefono": "+57 3057894561",
+        "email": "fernando.castro@example.com",
+        "direccionResidencial": "Carrera 78, Santa Marta",
+        "numeroMascotas": 3
+    },
+    {
+        "id": 10,
+        "tipoDocumento": 3,
+        "documento": "951753852",
+        "nombreCompleto": "Camila Suárez",
+        "telefono": "+57 3189517538",
+        "email": "camila.suarez@example.com",
+        "direccionResidencial": "Calle 34, Cúcuta",
+        "numeroMascotas": 1
+    }
+]

@@ -70,6 +70,7 @@
     width: 100%;
     /* justify-content: space-between; */
     align-items: center;
+    transition: 0.3s;
 }
 
 .main .table__row-header{
@@ -79,6 +80,10 @@
 
 .main .table__row-body{
     height: 30px;
+}
+
+.main .table__row:hover{
+    font-weight: 500;
 }
 
 .main .table__cell{
