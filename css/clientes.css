@@ -97,6 +97,7 @@
 
 .main .table__cell{
     width: calc((100% - 50px) / 4);
+    /* max-width: 100%; */
 }
 
 .main .table__header{
