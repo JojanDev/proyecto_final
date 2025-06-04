@@ -50,14 +50,22 @@ document.addEventListener('DOMContentLoaded', (e) => {
       if (linkRegistro) linkRegistro.remove();
     }
 
-    const fila = event.target.closest('.table__row-body');
+    const fila = event.target.closest('.table__row-body-cliente');
     if (fila) {
       const idObjetivo = fila.dataset.id;
-      console.log(idObjetivo);
+      // console.log(idObjetivo);
 
       const clientes = await obtenerClientes();
-      const clienteObjetivo = clientes.filter(({ id }) => id == idObjetivo); // == para comparar número con string
-      console.log(clienteObjetivo[0]);
+      const clienteObjetivo = clientes.find(({ id }) => id == idObjetivo); // == para comparar número con string
+      console.log(clienteObjetivo);
+
+      await agregarHTML('../Views/perfil_cliente.html', main);
+
+      const linkRegistro = document.createElement('link');
+      linkRegistro.rel = 'stylesheet';
+      linkRegistro.href = '../css/perfil_cliente.css';
+      linkRegistro.setAttribute('id', 'style-registro-cliente');
+      head.appendChild(linkRegistro);
     }
   });
 })

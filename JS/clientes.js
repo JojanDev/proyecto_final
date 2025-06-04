@@ -16,7 +16,7 @@ const crearCliente = ({ id, nombreCompleto, numeroMascotas, telefono, email }) =
   tdTelefono.textContent = telefono;
   tdEmail.textContent = email;
 
-  tr.classList.add('table__row-body',  'table__row');
+  tr.classList.add('table__row-body',  'table__row', 'table__row-body-cliente');
   tdId.classList.add('table__cell-body',  'table__cell');
   tdCliente.classList.add('table__cell-body',  'table__cell');
   tdMascotas.classList.add('table__cell-body',  'table__cell');
