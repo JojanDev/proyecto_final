@@ -1,23 +1,14 @@
 //Importaciones
 import { cargarTabla, registroCliente } from "./clientes.js";
-import { obtenerClientes } from "./utils.js";
+import { obtenerClientes, agregarHTML, reemplazarHTML } from "./utils.js";
+import { perfil_cliente } from "./perfilCliente.js";
 
+//Variables
 const clientes = document.querySelector('#clientes');
 const head = document.querySelector('head');
 const main = document.querySelector('.main');
 
-const reemplazarHTML = async (url, destino) => {
-    const response = await fetch(url); 
-    const html = await response.text();
-    destino.innerHTML = html;
-}
-
-const agregarHTML = async (url, destino) => {
-    const response = await fetch(url); 
-    const html = await response.text();
-    destino.innerHTML += html;
-}
-
+//Eventos
 document.addEventListener('DOMContentLoaded', (e) => {
   clientes.addEventListener('click', async () => {
     await reemplazarHTML('../Views/clientes.html', main);
@@ -64,8 +55,12 @@ document.addEventListener('DOMContentLoaded', (e) => {
       const linkRegistro = document.createElement('link');
       linkRegistro.rel = 'stylesheet';
       linkRegistro.href = '../css/perfil_cliente.css';
-      linkRegistro.setAttribute('id', 'style-registro-cliente');
+      linkRegistro.setAttribute('id', 'style-perfil-cliente');  
       head.appendChild(linkRegistro);
+    }
+
+    if (event.target.className == 'btn-atras') {
+      alert('hola')
     }
   });
 })
