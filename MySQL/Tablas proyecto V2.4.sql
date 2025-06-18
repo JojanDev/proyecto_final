@@ -23,7 +23,6 @@ CREATE TABLE personal (
 	id_info INT,
 	usuario VARCHAR(100) UNIQUE NOT NULL,
 	contrasena VARCHAR(255),
-	roles varchar(100) NOT NULL,
 	FOREIGN KEY (id_info) REFERENCES informacion_clientes_personal(id)
 );
 
@@ -174,14 +173,16 @@ INSERT INTO informacion_clientes_personal (id_tipo_documento, numero_documento, 
 (1, '1122334455', 'Carlos Ramírez', '3021122334', 'carlos@example.com', 'Diagonal 15 #33-12');
 
 -- 3. Insertar personal (ahora con usuario incluido)
-INSERT INTO personal (id_info, usuario, contrasena, roles) VALUES
-(1, 'juanp', '1234admin', 'admin'),
-(2, 'laurag', '5678emp', 'empleado'),
-(3, 'carlosr', 'abcd1234', 'empleado');
+INSERT INTO personal (id_info, usuario, contrasena) VALUES
+(1, 'juanp', '1234admin'),
+(2, 'laurag', '5678emp'),
+(3, 'carlosr', 'abcd1234');
 
 select * from personal;
 
-INSERT INTO personal (id_info, usuario, contrasena, roles) VALUES
-(1, 'johan', 'johan123', 'admin');
+INSERT INTO personal (id_info, usuario, contrasena) VALUES
+(1, 'johan', 'johan123');
 
 select * from informacion_clientes_personal;
+
+DELETE FROM personal;

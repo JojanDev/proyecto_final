@@ -84,7 +84,6 @@ document
   .addEventListener("click", async function (e) {
     e.preventDefault();
 
-    // 📌 Obtener valores de Información Personal
     const nombre = document.getElementById("nombre").value;
     const tipoDocumentoID = parseInt(
       document.getElementById("tipoDocumento").value
@@ -94,12 +93,9 @@ document
     const correo = document.getElementById("correo").value;
     const direccion = document.getElementById("direccion").value;
 
-    // 📌 Obtener valores de Datos de Acceso
     const usuario = document.getElementById("usuario").value;
     const contrasena = document.getElementById("contrasena").value;
-    const rol = document.getElementById("rol").value;
 
-    // 🧾 Crear objetos separados
     const infoPersonal = {
       idTipoDocumento: tipoDocumentoID,
       numeroDocumento: numeroDocumento,
@@ -114,7 +110,6 @@ document
       const datosAcceso = {
         usuario: usuario,
         contrasena: contrasena,
-        roles: rol,
         id_info: insertInfo,
       };
 
