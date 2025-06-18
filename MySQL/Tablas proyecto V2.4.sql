@@ -23,7 +23,7 @@ CREATE TABLE personal (
 	id_info INT,
 	usuario VARCHAR(100) UNIQUE NOT NULL,
 	contrasena VARCHAR(255),
-	roles ENUM('admin', 'empleado') NOT NULL,
+	roles varchar(100) NOT NULL,
 	FOREIGN KEY (id_info) REFERENCES informacion_clientes_personal(id)
 );
 
@@ -180,3 +180,8 @@ INSERT INTO personal (id_info, usuario, contrasena, roles) VALUES
 (3, 'carlosr', 'abcd1234', 'empleado');
 
 select * from personal;
+
+INSERT INTO personal (id_info, usuario, contrasena, roles) VALUES
+(1, 'johan', 'johan123', 'admin');
+
+select * from informacion_clientes_personal;
