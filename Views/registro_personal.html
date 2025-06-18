@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/registro_personal.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="../index.html">
+      <i class="bx bx-left-arrow-alt icon" id="back-registro"></i>
+    </a>
+    <div class="container-form">
+      <div class="container-form__header">
+        <h3 class="container-form__title">INFORMACION PERSONAL</h3>
+      </div>
+      <form action="" class="form">
+        <div class="form__container-field">
+          <label for="nombre" class="form__label">Nombre completo:</label>
+          <input type="text" class="form__input" id="nombre" />
+        </div>
+        <div class="form_container-fields">
+          <div class="form__container-field">
+            <label for="tipoDocumento" class="form__label"
+              >Tipo de documento:</label
+            >
+            <select id="tipoDocumento" class="form__input">
+              <!-- Aquí se insertarán las opciones dinámicamente -->
+            </select>
+          </div>
+          <div class="form__container-field">
+            <label for="numeroDocumento" class="form__label">Numero:</label>
+            <input type="text" class="form__input" id="numeroDocumento" />
+          </div>
+        </div>
+        <div class="form__container-field">
+          <label for="telefono" class="form__label">Telefono:</label>
+          <input type="text" class="form__input" id="telefono" />
+        </div>
+        <div class="form__container-field">
+          <label for="correo" class="form__label">Correo electronico:</label>
+          <input type="text" class="form__input" id="correo" />
+        </div>
+        <div class="form__container-field">
+          <label for="direccion" class="form__label">Direccion:</label>
+          <input type="text" class="form__input" id="direccion" />
+        </div>
+      </form>
+    </div>
+
+    <div class="container-form">
+      <div class="container-form__header">
+        <h3 class="container-form__title">DATOS DE ACCESO</h3>
+      </div>
+      <form action="" class="form form-datosAcceso">
+        <div class="form__container-field">
+          <label for="usuario" class="form__label">Usuario:</label>
+          <input type="text" class="form__input" id="usuario" />
+        </div>
+        <div class="form__container-field">
+          <label for="contrasena" class="form__label">Contraseña:</label>
+          <input type="text" class="form__input" id="contrasena" />
+        </div>
+        <div class="form__container-field">
+          <label for="rol" class="form__label">Rol:</label>
+          <select id="rol" name="rol" class="form__input">
+            <option value="recepcionista">Recepcionista</option>
+            <option value="veterinario">Veterinario</option>
+            <option value="auxiliar_veterinario">Auxiliar Veterinario</option>
+            <option value="cajero">Cajero</option>
+          </select>
+        </div>
+        <div class="form__container-btns">
+          <button class="form__btn" id="registrar">Registrar</button>
+          <a href="../index.html" class="form__btn form__btn--red">Cancelar</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="../JS/registroPersonal.js"></script>
+  </body>
+</html>

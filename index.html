@@ -1,72 +1,3 @@
-
-
-
-
-<!-- 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>Personas API</title>
-</head>
-<body>
-  <h1>Personas</h1>
-
-  <form id="personaForm">
-    <input type="text" id="nombre" placeholder="Nombre" required />
-    <input type="number" id="edad" placeholder="Edad" required />
-    <button type="submit">Agregar</button>
-  </form>
-
-  <h2>Lista de personas:</h2>
-  <ul id="listaPersonas"></ul>
-
-  <script>
-    const API_URL = "http://localhost:8081/api/personas";
-
-    // Mostrar lista de personas
-    function cargarPersonas() {
-      fetch(API_URL)
-        .then(response => response.json())
-        .then(data => {
-          const lista = document.getElementById("listaPersonas");
-          lista.innerHTML = "";
-          data.forEach(p => {
-            const item = document.createElement("li");
-            item.textContent = `${p.nombre} - ${p.edad} años`;
-            lista.appendChild(item);
-          });
-        })
-        .catch(err => console.error("Error al cargar personas:", err));
-    }
-
-    // Agregar persona
-    document.getElementById("personaForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-      const nombre = document.getElementById("nombre").value;
-      const edad = parseInt(document.getElementById("edad").value);
-
-      fetch(API_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ nombre, edad })
-      })
-        .then(() => {
-          cargarPersonas(); // Recargar la lista
-          e.target.reset(); // Limpiar el formulario
-        })
-        .catch(err => console.error("Error al agregar persona:", err));
-    });
-
-    // Cargar personas al cargar la página
-    cargarPersonas();
-  </script>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en" class="html">
 <head>
@@ -83,7 +14,7 @@
         <hr class="line">
         <div class="container-form">
             <h3 class="container-form__titulo">INICIAR SESION</h3>
-            <p class="container-form__subtitulo">Administrador</p>
+            <p class="container-form__subtitulo">Personal</p>
             <form action="#" class="form">
                 <div class="form__container-fields">
                     <label for="usuario" class="form__label">Usuario:</label>
@@ -95,6 +26,7 @@
                 </div>
                 <button class="btn form__btn" id="btn-acceder">Acceder</button>
             </form>
+            <a href="/Views/registro_personal.html" class="link-registro">Registrar cuenta</a>
         </div>
     </main>   
     <script src="JS/login.js"></script>
