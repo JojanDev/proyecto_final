@@ -4,7 +4,7 @@ const validarSesion = async () => {
   const userInput = document.querySelector("#usuario");
   const passwdInput = document.querySelector("#contraseña");
 
-  const response = await fetch("http://localhost:8081/api/personal/login", {
+  const response = await fetch("http://localhost:8080/api/personal/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -15,15 +15,21 @@ const validarSesion = async () => {
     }),
   });
 
+
   const data = await response.json();
+
+  const personal = await fetch("http://localhost:8080/api/personal/");
+  const personalData = await personal.json();
+  console.log(personalData);
+  
 
   console.log(data);
 
-  if (data.code == 200) {
+  if (data.code == 200) { 
     await Swal.fire({
       title: "Inicio de sesión",
       html: data.message,
-      timer: 1000,
+      timer: 5000,
       timerProgressBar: true,
       didOpen: () => {
         Swal.showLoading();
