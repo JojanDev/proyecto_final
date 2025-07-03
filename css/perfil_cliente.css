@@ -24,14 +24,20 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: #f0f7ff;
   padding: 20px;  
   border-radius: 21px;
   width: 800px;
-  height: 750px;
+  height: 660px;
   font-size: 18px;
-  box-shadow: 0 0px 30px 7px #00459e,
-              0 0px 30px 6px #ffffff;
+  box-shadow: 0 0px 10px 2px #00000045;
+}
+
+.perfil__contenedor_datos-personales{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 10px;
+  margin: 10px 0;
 }
 
 .perfil__rol-contenedor{
@@ -78,7 +84,7 @@
 
 .perfil__campo{
   font-weight: 600;
-  margin: 15px 0;
+  /* margin: 15px 0; */
 }
 
 .perfil__contenedor-documento .perfil__campo{
@@ -86,7 +92,7 @@
 }
 
 .perfil__campo--margen{
-  margin: 15px 0;
+  /* margin: 15px 0; */
 }
 
 .perfil__valor{
@@ -110,7 +116,7 @@
 }
 
 .fondo-borroso .contenedor-perfil .table{
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .main .table{

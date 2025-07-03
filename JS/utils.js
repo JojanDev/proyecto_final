@@ -1,5 +1,5 @@
 export const obtenerClientes = async () => {
-  const response = await fetch('../data.json');
+  const response = await fetch('http://localhost:8081/api/clientes/');
   return await response.json();
 }
 

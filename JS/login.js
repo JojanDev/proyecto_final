@@ -4,7 +4,7 @@ const validarSesion = async () => {
   const userInput = document.querySelector("#usuario");
   const passwdInput = document.querySelector("#contraseña");
 
-  const response = await fetch("http://localhost:8080/api/personal/login", {
+  const response = await fetch("http://localhost:8081/api/personal/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -18,7 +18,7 @@ const validarSesion = async () => {
 
   const data = await response.json();
 
-  const personal = await fetch("http://localhost:8080/api/personal/");
+  const personal = await fetch("http://localhost:8081/api/personal/");
   const personalData = await personal.json();
   console.log(personalData);
   

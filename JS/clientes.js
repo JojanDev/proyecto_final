@@ -1,6 +1,6 @@
 import { obtenerClientes } from "./utils.js";
 
-const crearCliente = ({ id, nombreCompleto, numeroMascotas, telefono, email }) => {
+const crearCliente = ({ id, info: {correo, direccion, idTipoDocumento, nombre, telefono}}) => {
   const tr = document.createElement('tr');
   const tdId = document.createElement('td');
   const tdCliente = document.createElement('td');
@@ -11,10 +11,10 @@ const crearCliente = ({ id, nombreCompleto, numeroMascotas, telefono, email }) =
   tr.setAttribute('data-id', id)
 
   tdId.textContent = id;
-  tdCliente.textContent = nombreCompleto;
-  tdMascotas.textContent = numeroMascotas;
+  tdCliente.textContent = nombre;
+  tdMascotas.textContent = direccion;
   tdTelefono.textContent = telefono;
-  tdEmail.textContent = email;
+  tdEmail.textContent = correo;
 
   tr.classList.add('table__row-body',  'table__row', 'table__row-body-cliente');
   tdId.classList.add('table__cell-body',  'table__cell');
@@ -46,9 +46,12 @@ export const registroCliente = () => {
 export const cargarTabla = async () => {
   const clientes = await obtenerClientes();
 
+  console.log(clientes);
+  
+
   const tbody = document.querySelector('.table__body');
 
-  clientes.forEach(cliente => {
+  clientes.data.forEach(cliente => {
     const row = crearCliente(cliente);
     tbody.append(row);
   });

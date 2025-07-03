@@ -92,6 +92,7 @@
   border-radius: 9px;
   border: none;
   outline: none;
+  padding-left: 5px;
 }
 
 .form__container-btns {

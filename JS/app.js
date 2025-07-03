@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
       // console.log(idObjetivo);
 
       const clientes = await obtenerClientes();
-      const clienteObjetivo = clientes.find(({ id }) => id == idObjetivo); // == para comparar número con string
+      const clienteObjetivo = clientes.data.find(({ id }) => id == idObjetivo); // == para comparar número con string
       console.log(clienteObjetivo);
 
       await agregarHTML('../Views/perfil_cliente.html', main);
@@ -57,6 +57,14 @@ document.addEventListener('DOMContentLoaded', (e) => {
       linkRegistro.href = '../css/perfil_cliente.css';
       linkRegistro.setAttribute('id', 'style-perfil-cliente');  
       head.appendChild(linkRegistro);
+    }
+
+    if (event.target.id == "back-perfil") {
+      const vista = document.querySelector('#view-perfil-cliente');
+      if (vista) vista.remove();
+      
+      const linkRegistro = document.querySelector('#style-perfil-cliente');
+      if (linkRegistro) linkRegistro.remove();
     }
 
     if (event.target.className == 'btn-atras') {
